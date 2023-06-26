@@ -20,7 +20,7 @@ if player == player_sys:
     print('Match tie')
 elif player == 'papar' and player_sys == 'rock':
     print('You won')
-elif player == 'rock' and player_sys == 'scissor':
+elif player == 'rock' and player_sys == 'scissor ':
     print('You won')
 elif player == 'scissor' and player_sys == 'paper':
     print('You won') 
