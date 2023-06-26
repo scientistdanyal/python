@@ -38,10 +38,14 @@ while running:
         user_ch = ('y','n')       #choices for user
         user_in = input("Play again? (y/n) ")
     
-        if user_in not in user_ch:
-            print("Invalid Choice!")
-        else: 
-            break    
+        if user_in in user_ch:
+            if user_in =='y':
+                break
+            else:
+                running = False
+        else:
+            print('Invalid Choice!')    
+        
 
 
 
