@@ -9,8 +9,12 @@ options = ('rock','papar','scissor')
 running = True
 
 while running:
+    player = None
     # user input space
-    player = input("Enter your choice(rock, papar and scissor: )").lower()   
+    while player not in options:
+        player = input("Enter your choice(rock, papar and scissor: )").lower()
+        if player not in options:
+            print("Invalid Choice")
     #generate random option for system
     player_sys = random.choice(options)
 
@@ -28,8 +32,17 @@ while running:
         print('You won') 
     else:
         print('you lose')
-    if not input("Play again? (y/n): ").lower() == "y":
-        running = False
+
+
+    while running:    
+        user_ch = ('y','n')       #choices for user
+        user_in = input("Play again? (y/n) ")
+    
+        if user_in not in user_ch:
+            print("Invalid Choice!")
+        else: 
+            running = False    
+
 
 
 print('Thanks for playing')    
