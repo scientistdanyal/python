@@ -12,7 +12,7 @@ while running:
     player = None
     # user input space
     while player not in options:
-        player = input("Enter your choice(rock, papar and scissor: )").lower()
+        player = input("Enter your choice(rock, papar and scissor): ").lower()
         if player not in options:
             print("Invalid Choice")
     #generate random option for system
@@ -41,7 +41,7 @@ while running:
         if user_in not in user_ch:
             print("Invalid Choice!")
         else: 
-            running = False    
+            break    
 
 
 
