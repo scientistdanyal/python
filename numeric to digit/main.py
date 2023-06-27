@@ -41,7 +41,7 @@ def number_to_words(num):
 
     return result.strip() #eliminate any extra white space 
 
-number = int(input("Enter a number: "))
-words = number_to_words(number)   #function calling
-print(f"{number} in words: {words}")
+# number = int(input("Enter a number: "))
+words = number_to_words(63783748392)   #function calling
+print(f"63783748392 in words: {words}")
 
