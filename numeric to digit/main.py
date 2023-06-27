@@ -19,10 +19,10 @@ def number_to_words(num):
     hundreds = (num // 100) % 10
     remainder = num % 100
 
-    result = ''
+    result = ''   #local scope declaration
 
     if billions > 0:
-        result += number_to_words(billions) + ' billion '
+        result += number_to_words(billions) + ' billion'
 
     if millions > 0:
         result += number_to_words(millions) + ' million '   # number_to_words(millions) recursive fucntion
