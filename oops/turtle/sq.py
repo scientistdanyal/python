@@ -10,7 +10,7 @@ alex.speed(0)
 
 
 
-total = 100
+total = 90
 
 while total !=0:
     for i in range(4):
