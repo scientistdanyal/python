@@ -9,7 +9,6 @@ class Bank_acc:
         self.acc_no = int(input("Enter account number: "))
         self.balance = int(input("Enter your balance: $"))
 
-
     def deposit(self):
         dep = int(input("How much do you want to deposit: $"))
         self.balance += dep
@@ -24,16 +23,61 @@ class Bank_acc:
             print("Your new balance is: $", self.balance)
 
 
+clients = []
 
-danyal = Bank_acc(0, "", 0)
+options = 1
+while options != 5:
+    print("1. Enter Client Data")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Search Client Data")
+    print("5. Exit")
+    options = int(input("Enter your choice: "))
 
-danyal.data()
+    if options == 1:
+        client = Bank_acc(0, "", 0)
+        client.data()
+        clients.append(client)
+        print("Client data added successfully!")
 
-print(danyal.owner_name, danyal.acc_no, danyal.balance)
+    elif options == 2:
+        acc_no = int(input("Enter account number: "))
+        found = False
+        for client in clients:
+            if client.acc_no == acc_no:
+                client.deposit()
+                found = True
+                break
+        if not found:
+            print("Client not found!")
 
-danyal.deposit()
+    elif options == 3:
+        acc_no = int(input("Enter account number: "))
+        found = False
+        for client in clients:
+            if client.acc_no == acc_no:
+                client.withdraw()
+                found = True
+                break
+        if not found:
+            print("Client not found!")
+
+    elif options == 4:
+        acc_no = int(input("Enter account number: "))
+        found = False
+        for client in clients:
+            if client.acc_no == acc_no:
+                print("Client Data:")
+                print("Account Number:", client.acc_no)
+                print("Owner Name:", client.owner_name)
+                print("Balance:", client.balance)
+                found = True
+                break
+        if not found:
+            print("Client not found!")
+
+    else:
+        print("Goodbye!")
 
 
-danyal.withdraw()
-
-print(danyal.owner_name, danyal.acc_no, danyal.balance)
+print(clients.type)
