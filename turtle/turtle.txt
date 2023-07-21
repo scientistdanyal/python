@@ -1,0 +1,18 @@
+1) bgcolor() #this basically set turtle screen color
+2) title() # this give title to our turtle screen
+
+3) bgpic() #this set background picture in our turtle screen 
+4) 'turtle_name' = turtle.Turtle() # to make turtle
+5) 'turtle_name'.color('turtle_color','line_color')
+6) 'turtle_name'.shape() #set turtle shape
+7) 'turtle_name'.forward(distance)
+8) 'turtle_name'.backward(distance)
+9) 'turtle_name'.right(angle)
+10) 'turtle_name'.left(angle)
+11) 'turtle_name'.setheading(to_angle) 
+12) 'turtle_name'.hideturtle()
+13) 'turtle_name'.speed()
+14) 'turtle_name'.begin_fill()
+15) 'turtle_name'.fillcolor('red')
+
+
