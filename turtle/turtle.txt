@@ -1,6 +1,5 @@
 1) bgcolor() #this basically set turtle screen color
 2) title() # this give title to our turtle screen
-
 3) bgpic() #this set background picture in our turtle screen 
 4) 'turtle_name' = turtle.Turtle() # to make turtle
 5) 'turtle_name'.color('turtle_color','line_color')
@@ -14,5 +13,10 @@
 13) 'turtle_name'.speed()
 14) 'turtle_name'.begin_fill()
 15) 'turtle_name'.fillcolor('red')
-
+14) 'turtle_name'.reset() #this wil reset turtle
+15) 'turtle_name'.undo() # this will undo our drawing
+16) 'turtle_name'.goto(x,y)
+17) penup() # to hide our turtle
+18) pendown() # to show our turtle
+19) 'turtle_name'.home() # this command will move our turtle to home position
 
