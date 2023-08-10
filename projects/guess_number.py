@@ -26,4 +26,4 @@ while chances < 8:
         print("The number was {}\n".format(number))
         print("Better luck next time.")            
         break
-    print('\n')
+    
