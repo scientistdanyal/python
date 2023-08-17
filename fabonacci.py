@@ -1,4 +1,4 @@
-def fabonacci(n):
+rdef fabonacci(n):
     mylist = [0,1]
     if n in mylist:
         return n
